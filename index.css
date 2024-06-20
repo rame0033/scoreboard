@@ -11,6 +11,7 @@ body {
 
 .container {
     display: flex;
+    flex-direction: column;
     gap:2rem;
     justify-content: space-around;
 }
@@ -58,14 +59,27 @@ button:not(#re5Gt){
 
 #re5Gt{
     width:100%;
+    height:5rem;
     background-color: #1B244A;
     border: 1px solid #eeeeee;
     transition: all 0.1s ease;
-    font: 1.25rem 'Orbitron';
+    font: 1.75rem 'Orbitron';
     color: #eeeeee;
     
 }
 
 button:active{
     transform: scale(0.75);
+}
+
+.reset-wrap{
+    margin: 0 auto;
+    width:30%;
+    padding:5rem;
+}
+
+@media screen and (min-width:800px) {
+    .container{
+        flex-direction: row;
+    }
 }
